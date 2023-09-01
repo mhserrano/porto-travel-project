@@ -16,7 +16,7 @@ header {
       rgba(20, 45, 76, 0.4),
       rgba(20, 45, 76, 0.4)
     ),
-    url(images/background.jpg);
+    url(images/background-header.jpg);
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -54,4 +54,9 @@ header a {
   letter-spacing: 3px;
   padding: 16px 32px;
   border: none;
+}
+
+footer section {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
 }
