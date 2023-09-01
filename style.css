@@ -58,8 +58,8 @@ header a {
 
 footer {
   background-image: linear-gradient(
-      rgba(20, 45, 76, 0.7),
-      rgba(20, 45, 76, 0.7)
+      rgba(20, 45, 76, 0.8),
+      rgba(20, 45, 76, 0.8)
     ),
     url(images/background-footer.jpg);
   background-size: cover;
@@ -80,9 +80,11 @@ footer h3 {
 }
 
 footer a,
-footer p {
+footer p,
+footer li {
   color: #ffffff;
   opacity: 0.7;
+  line-height: 24px;
 }
 footer ul {
   padding: 0;
@@ -90,4 +92,24 @@ footer ul {
 
 footer li {
   list-style: none;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+  footer section {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+    padding: 30px;
+  }
 }
