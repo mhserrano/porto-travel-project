@@ -63,7 +63,7 @@ main .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 64px;
-  padding: 100px;
+  padding: 100px 0;
 }
 main img {
   max-width: 100%;
@@ -137,6 +137,11 @@ footer li {
   }
   header h3 {
     font-size: 12px;
+  }
+  main .about {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+    padding: 30px;
   }
   footer section {
     grid-template-columns: 1fr;
