@@ -63,7 +63,7 @@ main .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 64px;
-  padding: 100px 0;
+  padding: 100px;
 }
 main img {
   max-width: 100%;
