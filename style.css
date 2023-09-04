@@ -36,24 +36,24 @@ body {
 .favourite-places {
   background-color: #f8f8f8;
 }
-.favourite-places .local-grid {
+.grid-places {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.favourite-places .card {
+.card {
   background-color: #ffffff;
   margin: 30px 0;
 }
-.favourite-places .card-header {
+.card-header {
   grid-gap: 0;
   grid-template-columns: 1fr 1fr;
 }
 
-.favourite-places .card-body {
+.card-body {
   padding: 30px;
 }
 
-.favourite-places .button {
+.button {
   display: block;
   padding: 16px;
   background-color: #176b87;
@@ -64,6 +64,11 @@ body {
   font-weight: 700;
   font-size: 14px;
   margin: 0 30px 30px;
+}
+.grid-footer {
+  grid-template-columns: 1fr 2fr 2fr;
+  max-width: 100%;
+  padding: 100px;
 }
 header {
   background-image: linear-gradient(
@@ -157,11 +162,6 @@ footer {
   color: #ffffff;
 }
 
-footer section {
-  grid-template-columns: 1fr 2fr 2fr;
-  max-width: 100%;
-  padding: 100px;
-}
 footer h3 {
   font-size: 20px;
 }
@@ -194,28 +194,19 @@ footer li {
   header h3 {
     font-size: 12px;
   }
-  .about {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-    padding: 30px;
-  }
-  .favourite-places {
-    padding: 30px;
-  }
-  .favourite-places .local-grid {
+  .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
-  .favourite-places .card-header {
-    grid-gap: 0;
-    grid-template-columns: 1fr;
+  .about,
+  .favourite-places,
+  .grid-footer {
+    padding: 30px;
   }
-  .favourite-places img {
+  .card-header img {
     display: none;
   }
-  footer .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-    padding: 30px;
+  .card-header {
+    grid-gap: 0;
   }
 }
