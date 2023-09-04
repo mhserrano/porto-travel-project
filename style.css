@@ -77,7 +77,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-gallery .embed {
-  aspect-ratio: 3/10;
+  aspect-ratio: 3/6;
 }
 .pinterest-embeds {
   margin: 30px 0;
