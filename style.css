@@ -62,15 +62,19 @@ section {
   padding: 100px;
   margin: 0 auto;
 }
-main .about {
-  background-color: #ffffff;
+.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 64px;
 }
-main .about img {
+.img-responsive {
   max-width: 100%;
   height: auto;
+}
+main .about {
+  background-color: #ffffff;
+  grid-template-columns: 1fr 1fr;
+}
+main .about img {
   filter: brightness(1.5);
 }
 main h2 {
@@ -106,9 +110,7 @@ footer {
 }
 
 footer section {
-  display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 64px;
   max-width: 100%;
   padding: 100px;
 }
