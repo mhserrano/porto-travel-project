@@ -4,7 +4,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #142d4c;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
 }
 .container {
   max-width: 1400px;
@@ -55,17 +56,19 @@ header a {
   padding: 16px 32px;
   border: none;
 }
-main {
-  background-color: #ffffff;
-  color: var(--primary-color);
+
+section {
+  max-width: 100%;
+  padding: 100px;
+  margin: 0 auto;
 }
 main .about {
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 64px;
-  padding: 100px;
 }
-main img {
+main .about img {
   max-width: 100%;
   height: auto;
   filter: brightness(1.5);
@@ -85,6 +88,9 @@ main p {
   font-size: 16px;
   line-height: 1.5;
   opacity: 0.7;
+}
+main .favourite-places {
+  background-color: #f8f8f8;
 }
 
 footer {
