@@ -199,7 +199,21 @@ footer li {
     grid-gap: 32px;
     padding: 30px;
   }
-  footer section {
+  .favourite-places {
+    padding: 30px;
+  }
+  .favourite-places .local-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  .favourite-places .card-header {
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+  }
+  .favourite-places img {
+    display: none;
+  }
+  footer .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
     padding: 30px;
